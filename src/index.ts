@@ -1,10 +1,10 @@
 import { Elysia } from "elysia";
-import * as Routes from "./route";
+import * as Routes from "./routes";
 
 const app = new Elysia();
 
 app.get("/", Routes.home);
-app.get("/healthcheck", Routes.healthcheck);
+app.get("/healthcheck", Routes.healthCheck);
 app.get("/hello/:name", Routes.hello);
 app.get("/users", Routes.users);
 app.get("/users/:id", Routes.usersWithId);
